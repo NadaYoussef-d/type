@@ -1,0 +1,17 @@
+"use strict";
+exports.__esModule = true;
+var point_1 = require("./point");
+var line_1 = require("./line");
+var rect_1 = require("./rect");
+var IMG_1 = require("./IMG");
+var p = new point_1["default"](3, 6);
+var p2 = new point_1["default"](4, 6);
+var p3 = new point_1["default"](5, 6);
+var p4 = new point_1["default"](6, 6);
+var img = new IMG_1["default"](p, p2, p3, p4);
+p.Draw();
+var line = new line_1["default"](p, p2);
+line.Draw();
+var rect = new rect_1["default"](p, p2, p3, p4);
+rect.Draw();
+img.Draw();
